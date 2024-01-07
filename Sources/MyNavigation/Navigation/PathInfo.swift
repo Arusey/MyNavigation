@@ -16,6 +16,7 @@ public enum PresentationMode {
     case halfSheet
 }
 
+@available(iOS 15.0, *)
 public class PathInfo<Т: Hashable>: ObservableObject {
     @Published public var root: Т
     @Published public var path: [Т] = []
